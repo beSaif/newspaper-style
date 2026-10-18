@@ -1,5 +1,5 @@
 /* Newspaper style for print (A4, WeasyPrint or browser print). One reading column: cover, then why / what / how, then sources.
-   Swap the disclaimer text on the cover footer. Red for refs and review marks only. */
+   Swap the disclaimer text on the cover footer. All black by default; for a brand accent, replace #111111 on the banner, review statuses and refs. */
 @page {
   size: A4;
   margin: 22mm 18mm 20mm 18mm;
@@ -42,7 +42,7 @@ table.meta { border-collapse: collapse; }
 table.meta td { padding: 0 6mm 3mm 0; vertical-align: top; }
 table.meta td.label { color: #5E5E5E; font-size: 8.5pt; width: 32mm; padding-top: 0.4mm; }
 .intro { font-size: 11pt; margin-top: 12mm; }
-.banner { border: 0.3mm solid #E30613; color: #E30613; padding: 2mm 3mm; font-weight: bold;
+.banner { border: 0.3mm solid #111111; color: #111111; padding: 2mm 3mm; font-weight: bold;
           margin-bottom: 8mm; }
 .internal { background: #FAFAFA; border-left: 0.6mm solid #D9D9D9; padding: 2mm 3mm;
             color: #111111; font-size: 8.5pt; }
@@ -58,13 +58,13 @@ section.sec h2 { margin-bottom: 2mm; }
 .kind { font-size: 8pt; color: #5E5E5E; margin: 0 0 1mm; }
 .status { font-size: 8pt; }
 .status.verified { color: #111111; }
-.status.edited { color: #E30613; }
-.status.needs_check { color: #E30613; font-weight: bold; }
+.status.edited { color: #111111; }
+.status.needs_check { color: #111111; font-weight: bold; }
 sup.ref { font-size: 6.5pt; line-height: 0; vertical-align: super; }
-sup.ref a { color: #E30613; }
+sup.ref a { color: #111111; }
 body.clean sup.ref a { color: #5E5E5E; }
 .evline { font-size: 8pt; color: #5E5E5E; margin: 0 0 1mm; }
-.evline a, .ev a.go { color: #E30613; text-decoration: underline; }
+.evline a, .ev a.go { color: #111111; text-decoration: underline; }
 .notes { margin-top: 2mm; }
 
 /* Visit day */

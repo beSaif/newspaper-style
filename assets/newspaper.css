@@ -1,7 +1,7 @@
-/* Newspaper style: Swiss grid, two columns, one vertical red rule. Personality lives only in the mascot.
-   Red only for actions, the rule and the active tab. Swap --red, --red-h and --tint for another brand. */
+/* Newspaper style: Swiss grid, two columns, one vertical rule. Personality lives only in the mascot.
+   All black by default. The accent marks actions, the rule and the active tab only; set --accent, --accent-h and --tint to a brand colour if you want one (mutz used Bern red #E30613 / #B8000F / #FCE3E5). */
 :root{
-  --red:#E30613; --red-h:#B8000F; --tint:#FCE3E5;
+  --accent:#111111; --accent-h:#333333; --tint:#F2F2F2;
   --black:#111111; --grey:#5E5E5E; --rule:#D9D9D9; --panel:#FAFAFA; --panel2:#F2F2F2; --paper:#FFFFFF;
   --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -15,7 +15,7 @@ p{margin:0 0 10px}
 :focus-visible{outline:2px solid var(--black);outline-offset:2px}
 
 /* text links: a faint rule at rest, a full line grows out from the middle on hover */
-a{color:var(--black)}a:hover{color:var(--red-h)}
+a{color:var(--black)}a:hover{color:var(--accent-h)}
 a:not([class]),.lnk{text-decoration:none;padding-bottom:1px;background:linear-gradient(currentColor,currentColor) 50% 100%/0 1px no-repeat,linear-gradient(var(--rule),var(--rule)) 0 100%/100% 1px no-repeat;transition:background-size .15s ease-in-out}
 a:not([class]):hover,.lnk:hover{background-size:100% 1px,100% 1px}
 nav a{background:none!important}
@@ -28,11 +28,11 @@ nav a{background:none!important}
 /* masthead */
 .mast{display:flex;align-items:stretch;gap:32px;padding:0 32px;border-bottom:1px solid var(--black);min-height:56px}
 .mast .name{display:flex;align-items:center;gap:12px;font-weight:700;font-size:17px;text-decoration:none;color:var(--black)}
-.sq{width:14px;height:14px;background:var(--red);display:inline-block}
+.sq{width:14px;height:14px;background:var(--accent);display:inline-block}
 .mast nav{display:flex;gap:24px}
 .mast nav a{display:flex;align-items:center;font-size:15px;color:var(--grey);text-decoration:none;border-bottom:3px solid transparent;padding-top:3px}
 .mast nav a:hover{color:var(--black)}
-.mast nav a.on{color:var(--black);font-weight:700;border-bottom-color:var(--red)}
+.mast nav a.on{color:var(--black);font-weight:700;border-bottom-color:var(--accent)}
 .mast .aside{margin-left:auto;display:flex;align-items:center;gap:24px;font-size:13px;color:var(--grey)}
 
 /* sub-bar: breadcrumb, status chip, steps */
@@ -40,19 +40,19 @@ nav a{background:none!important}
 .st{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 .st a{padding:8px 14px;font-size:14px;text-decoration:none;border-top:3px solid var(--rule);color:var(--grey)}
 .st a.done{border-top-color:var(--black);color:var(--black)}
-.st a.on{border-top-color:var(--red);color:var(--black);font-weight:700}
+.st a.on{border-top-color:var(--accent);color:var(--black);font-weight:700}
 
-/* two columns and the red rule */
+/* two columns and the vertical rule */
 .two{display:flex;min-height:calc(100vh - 120px)}
 .two>aside{flex:0 0 300px;padding:24px 20px 24px 32px}
-.two>.vr{width:1px;flex:none;background:var(--red)}
+.two>.vr{width:1px;flex:none;background:var(--accent)}
 .two>main{flex:1;min-width:0;padding:24px 32px 96px;max-width:1100px}
 
 /* buttons */
 .b{font:700 14px/1.2 var(--font);padding:12px 16px;min-height:44px;border:1px solid var(--black);background:#fff;color:var(--black);text-decoration:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border-radius:0}
 .b:hover{color:var(--black);background:var(--panel2)}
-.b.p{background:var(--red);border-color:var(--red);color:#fff}
-.b.p:hover{background:var(--red-h);border-color:var(--red-h)}
+.b.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.b.p:hover{background:var(--accent-h);border-color:var(--accent-h)}
 .b.s{padding:6px 10px;min-height:36px;font-size:13px}
 .b.on{background:var(--black);color:#fff}
 .b[disabled]{opacity:.45;cursor:not-allowed}
@@ -66,7 +66,7 @@ nav a{background:none!important}
 .src{font-size:13px;border:1px solid var(--black);padding:3px 8px;color:var(--black);text-decoration:none;background:#fff}
 .src:hover{background:var(--panel2);color:var(--black)}
 sup.ref{font-size:.7em;line-height:0}
-sup.ref a{color:var(--red);text-decoration:none}
+sup.ref a{color:var(--accent);text-decoration:none}
 
 /* verdict: the headline answer, inverse */
 .verdict{padding:12px 16px;background:var(--black);color:#fff;margin-bottom:12px}
@@ -117,10 +117,10 @@ dl.pr dd{margin:0}
 .tl{border-left:2px solid var(--black);margin-left:5px;padding-left:18px;display:flex;flex-direction:column;gap:16px}
 .tl .it{position:relative;font-size:14px}
 .tl .it::before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;background:#fff;border:2px solid var(--black)}
-.tl .it.now::before{background:var(--red);border-color:var(--red)}
+.tl .it.now::before{background:var(--accent);border-color:var(--accent)}
 
 /* states */
-.err{border:1px solid var(--black);border-left:4px solid var(--red-h);padding:12px 14px;font-size:14px;background:#fff}
+.err{border:1px solid var(--black);border-left:4px solid var(--accent-h);padding:12px 14px;font-size:14px;background:#fff}
 .empty{border:1px dashed var(--rule);padding:14px;color:var(--grey)}
 .toast{padding:8px 10px;background:var(--black);color:#fff;font-size:13px}
 

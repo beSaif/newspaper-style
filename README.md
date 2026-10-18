@@ -19,6 +19,6 @@ Then ask Claude for "the newspaper style" on any UI, dashboard or PDF.
 - `assets/print.css`: A4 version for PDFs
 - `assets/example.html`: every component on one page
 
-The accent is Bern red. Swap `--red` in the CSS for your own brand.
+It's all black by default. Set `--accent` in the CSS if you want one brand colour (mutz used Bern red).
 
 Saif
