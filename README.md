@@ -1,24 +1,18 @@
-# newspaper-style
+<sub><b>THE NEWSPAPER STYLE</b> · FOR MIKE ROMANO · 18 OCTOBER 2026</sub>
 
-Mike, you called the mutz look "the newspaper style", so I turned it into a Claude Code skill you can use on your own projects.
+# Mike's favourite look is now a Claude Code skill
+
+The black and white design you called "the newspaper style" in mutz now works on any project. Clone it once, and Claude builds interfaces, dashboards and A4 PDFs in it.
+
+<sub>By Saif</sub>
+
+---
 
 ![Example page in the newspaper style](example-black.png)
 
-## Install
-
-```bash
-git clone https://github.com/beSaif/newspaper-style ~/.claude/skills/newspaper-style
-```
-
-Then ask Claude for "the newspaper style" on any UI, dashboard or PDF.
-
-## What's inside
-
-- `SKILL.md`: the rules (palette, type, grid, components, copy voice, print, checklist)
-- `assets/newspaper.css`: starter stylesheet
-- `assets/print.css`: A4 version for PDFs
-- `assets/example.html`: every component on one page
-
-It's all black by default. Set `--accent` in the CSS if you want one brand colour (mutz used Bern red).
-
-Saif
+<table>
+<tr><td><sub>INSTALL</sub></td><td><code>git clone https://github.com/beSaif/newspaper-style ~/.claude/skills/newspaper-style</code></td></tr>
+<tr><td><sub>USE</sub></td><td>Ask Claude for "the newspaper style".</td></tr>
+<tr><td><sub>INSIDE</sub></td><td>The rules in <code>SKILL.md</code>, a starter stylesheet, an A4 print sheet and an example page.</td></tr>
+<tr><td><sub>COLOUR</sub></td><td>All black. Set <code>--accent</code> if you want one brand colour.</td></tr>
+</table>
