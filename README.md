@@ -2,7 +2,7 @@
 
 Mike, you called the mutz look "the newspaper style", so I turned it into a Claude Code skill you can use on your own projects.
 
-![Example page in the newspaper style](example.png)
+![Example page in the newspaper style](example-black.png)
 
 ## Install
 
