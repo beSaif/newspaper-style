@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matches · Example</title>
+<link rel="stylesheet" href="newspaper.css">
+</head>
+<body>
+
+<header class="mast">
+  <a class="name" href="#"><span class="sq" aria-hidden="true"></span>Expertise Navigator</a>
+  <nav aria-label="Sections">
+    <a class="on" href="#" aria-current="page">Leads</a><a href="#">Insights</a><a href="#">Archives</a><a href="#">Evaluation</a>
+  </nav>
+  <div class="aside"><span>Prototype, not an official tool</span><span>A. Officer</span></div>
+</header>
+
+<div class="subbar">
+  <a href="#">Leads</a><span class="lb">/</span><b>Northwind Health</b>
+  <span class="chip">Inbound · confidential</span>
+  <nav class="st" aria-label="Steps">
+    <a class="done" href="#">1 Brief</a><a class="on" href="#" aria-current="step">2 Matches</a><a href="#">3 Evidence map</a><a href="#">4 Pitch</a>
+  </nav>
+</div>
+
+<div class="two">
+  <aside>
+    <div class="verdict"><span>Verdict</span><b>Bid on 3 of 4 needs</b></div>
+    <a class="ix on" href="#"><span><b>Clinical study</b><span class="lb">Strong · 10 matches, 6 units</span></span></a>
+    <a class="ix" href="#"><span><b>R&amp;D partner</b><span class="lb">Strong · 7 matches, 4 units</span></span></a>
+    <a class="ix" href="#"><span><b>Cleanroom</b><span class="lb">No match · nothing with evidence</span></span></a>
+    <a class="ix" href="#"><span><b>Funding</b><span class="lb">Strong · 3 curated</span></span></a>
+  </aside>
+  <div class="vr" aria-hidden="true"></div>
+  <main>
+    <p class="kicker">Need 1 of 4</p>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+      <h1 style="font-size:28px">Clinical study</h1>
+      <span class="lb">10 matches · sorted by evidence × recency</span>
+    </div>
+    <p style="margin:6px 0 14px">A study with adults who have type 1 diabetes, measuring glucose during exercise.</p>
+    <div class="bs" role="group" aria-label="Match types" style="margin-bottom:16px">
+      <a class="b s on" href="#">All 10</a><a class="b s" href="#">People 4</a><a class="b s" href="#">Units 5</a><a class="b s" href="#">Grants 1</a>
+    </div>
+
+    <article class="res">
+      <div class="lb">Unit<br>Metabolism Centre</div>
+      <div>
+        <h2>Metabolism Centre</h2>
+        <p class="sub">Centre · University hospital</p>
+        <p class="body">Runs exercise studies with people who have type 1 diabetes and measures glucose continuously during them.<sup class="ref"><a href="#s1">[1]</a></sup><sup class="ref"><a href="#s2">[2]</a></sup></p>
+        <p class="pull">“Participants cycled for 60 minutes while glucose was recorded every five minutes.” [1]</p>
+        <div class="tags"><span class="tg on">Active</span><span class="tg">2 quotes, 2 pages</span><span class="tg on">Strong evidence</span></div>
+        <div class="foot">
+          <a class="src" id="s1" href="#">[1] example.org</a><a class="src" id="s2" href="#">[2] example.org</a><a href="#">Show in map</a>
+          <span class="sp"></span><button class="b">Reject</button><button class="b p">Accept</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="res">
+      <div class="lb">Person<br>Sports Medicine</div>
+      <div>
+        <h2>Dr. Jane Example</h2>
+        <p class="sub">Group lead · Sports Medicine</p>
+        <blockquote class="qt">Our group studies how training changes insulin needs in young adults.</blockquote>
+        <dl class="pr" style="margin:10px 0">
+          <dt>Grant</dt><dd><a href="#">Exercise and glucose control in type 1 diabetes</a> · 2024 to 2028</dd>
+          <dt>Activity</dt><dd>Active · 1 quote, 1 page · thin evidence</dd>
+        </dl>
+        <div class="foot"><a class="src" href="#">[3] example.org</a><span class="sp"></span><b style="font-size:14px">Accepted</b><button class="b">Undo</button></div>
+      </div>
+    </article>
+
+    <h2 style="margin:40px 0 10px">Coverage</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px">
+      <div class="meter"><span class="meter-l"><span>Needs with a match</span><span class="lb">3 of 4</span></span><span class="bar"><i style="width:75%"></i></span></div>
+      <div class="meter"><span class="meter-l"><span>Claims with a quote</span><span class="lb">12 of 12</span></span><span class="bar"><i style="width:100%"></i></span></div>
+    </div>
+
+    <table class="t">
+      <thead><tr><th>Source</th><th>Pages</th><th>Fetched</th></tr></thead>
+      <tbody>
+        <tr><td>example.org</td><td>1,204</td><td>12 Oct 2026</td></tr>
+        <tr><td>research.example.org</td><td>388</td><td>12 Oct 2026</td></tr>
+      </tbody>
+    </table>
+
+    <h2 style="margin:40px 0 10px">After sending</h2>
+    <div class="tl">
+      <div class="it"><b>Pitch sent</b><div class="lb">3 Oct · A. Officer</div></div>
+      <div class="it now"><b>Company asked for a visit</b><div class="lb">9 Oct · reply by email</div></div>
+    </div>
+
+    <h2 style="margin:40px 0 10px">States</h2>
+    <p class="empty">No match for “Cleanroom”. Searched 16 sources, 3,000 pages. Try a broader term or add the need as a gap.</p>
+    <p class="err" style="margin-top:10px">The search did not answer. Nothing was changed. Try again, or search by keyword only.</p>
+  </main>
+</div>
+
+<p class="foot-note">Prototype, not an official tool</p>
+
+<a class="mascot" href="#" aria-label="Open the assistant">
+  <svg viewBox="0 0 64 60" width="72" height="68" aria-hidden="true"><circle cx="14" cy="14" r="10" fill="#111"/><circle cx="50" cy="14" r="10" fill="#111"/><circle cx="14" cy="14" r="4" fill="#fff"/><circle cx="50" cy="14" r="4" fill="#fff"/><ellipse cx="32" cy="33" rx="24" ry="22" fill="#111"/><ellipse cx="32" cy="41" rx="10" ry="7" fill="#fff"/><ellipse cx="32" cy="38" rx="4" ry="2.6" fill="#111"/><circle cx="23" cy="29" r="2.6" fill="#fff"/><circle cx="41" cy="29" r="2.6" fill="#fff"/><path d="M8 52h48v8H8z" fill="#E30613"/></svg>
+</a>
+</body>
+</html>
